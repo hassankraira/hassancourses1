@@ -1,0 +1,14 @@
+<div class="ff">
+    <div class="first"><p class="hh">Got a question in mind<span style="color: #a587e3;">?</span></p>
+        <p class="hh2">Whether you're curious about our courses, need help choosing the right one, or just want to reach out with feedback, we’re here to assist you! Use the form below to get in touch — no spam, just support for your learning journey.
+        </p>
+    </div>
+    
+    <div class="second" [formGroup]="form">
+        <input formControlName="from_name" class="hh3" placeholder="What's your name?" type="name">
+        <input formControlName="from_email"  class="hh3" placeholder="What's your email?" type="email">
+        <input formControlName="business_name" class="hh3" placeholder="What's your phone number" type="">
+        <textarea #textarea [value]="ContactComponent.message" formControlName="message"   class="hh3 tellus" placeholder="What do you want to tell me?" type="text"></textarea>
+        <button class="exp" (click)="submit(textarea)">Submit</button>
+      </div>
+    </div>

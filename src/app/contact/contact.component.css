@@ -1,0 +1,173 @@
+.hh {
+    font-weight: 800;
+    font-family: 'n27', sans-serif;
+    color: #000000;
+    font-size: 4.5vw; /* Responsive font size */
+    line-height: 1.175;
+    text-align: left;
+    margin: 0;
+    padding-block: 0;
+    width: 85%;
+}
+
+.ff {
+    display: flex;
+    flex-direction: row; /* Stack items on small screens */
+    margin-top: 10%;
+    text-align: center;
+    align-items: center;
+    font-family: 'n27', sans-serif;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.hh2 {
+    font-size: max(.125em, min(1.25em, 5.3333333333vw));
+    line-height: 2;
+    width: 78%;
+    opacity: .75;
+    color: #000000;
+    text-align: left;
+}
+
+.first {
+    width: 100%; /* Full width on small screens */
+    text-align: center;
+    align-items: center;
+}
+
+.second {
+    color: rgb(0, 0, 0);
+    width: 100%; /* Full width on small screens */
+    display: grid;
+    gap: 10px;
+}
+
+.hh3 {
+    padding-block: 1.5vh;
+    padding-inline: 1.2vw;
+    border: 3.2px solid;
+    border-image: linear-gradient(to bottom right, #a2d5f2, #7bdcb5, #6fc3df) 1;
+    border-radius: 4px;
+    width: 83.3%; /* Adjusted for responsiveness */
+    margin-inline: 5%; /* Centered on small screens */
+    background-color: transparent;
+    font-size: max(.1em, min(1em, 5.3333333333vw));
+    font-weight: 600;
+    outline: none;
+    color: inherit;
+    transition: border-image .25s ease-in-out;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 1; /* Firefox */
+}
+
+.head {
+    display: flex;
+    flex-direction: column; /* Stack on smaller screens */
+    gap: 10%; /* Adjusted gap for smaller screens */
+}
+
+.tellus {
+    height: 18vh;
+    border-radius: 4px;
+    resize: none;
+    font-size: max(.1em, min(1em, 5.3333333333vw));
+    font-weight: 600;
+    width: 90%; /* Responsive width */
+    padding-top: 1.5vh;
+    padding-left: 1.2vw;
+    box-sizing: border-box;
+}
+
+.tellus::placeholder {
+    color: rgb(0, 0, 0); 
+    text-align: left;
+    vertical-align: top; 
+}
+
+.pp {
+    padding-block: 8px;
+    padding-inline: 16px;
+    border: 1.6px solid #87e399;
+    border-radius: 50px;
+    transition: .5s ease-in-out;
+}
+
+.hh3:hover .arrow {
+    transform: rotate(45deg);
+    transition: .5s ease-in-out;
+}
+
+.pphh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width on small screens */
+    text-align: center;
+    gap: 3%;
+}
+
+.exp {
+    padding-block: 1.5vh;
+    padding-inline: 1.2vw;
+    border-radius: 4px;
+    width: 90%; /* Responsive width */
+    margin-inline: 5%; /* Centered on small screens */
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: max(.1em, min(1em, 5.3333333333vw));
+    font-weight: 600;
+    cursor: pointer;
+    border: 3.2px solid #000000;
+    transition: .8s cubic-bezier(.13, .53, .38, .97);
+}
+
+.exp:hover {
+    box-shadow: 0 0 16px #87e39b;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .hh {
+        font-size: 10vw; /* Responsive font size */
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+.hh2{
+    width: 100%;
+}
+.tellus{
+    width: 88%;
+}
+    .ff {
+        margin-top: 30%;
+        flex-direction: column; /* Stack items on small screens */
+        gap: 5%; /* Adjust gap for smaller screens */
+    }
+
+    .first, .second {
+        width: 100%; /* Adjusted for better fit on small screens */
+    }
+    .first{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pphh {
+        width: 90%; /* Full width for better spacing */
+    }
+
+    .exp {
+        width: 88%; /* Responsive width for buttons */
+    }
+}

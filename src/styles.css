@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'n27';
+    src: url('/assets/fonts/N27-Regular.woff2') format('woff2'),
+         url('/assets/fonts/N27-Regular.woff') format('woff'),
+         url('/assets/fonts/N27-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'n27';
+    src: url('/assets/fonts/N27-RegularItalic.woff2') format('woff2'),
+         url('/assets/fonts/N27-RegularItalic.woff') format('woff'),
+         url('/assets/fonts/N27-RegularItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+}
+html {
+    scroll-behavior: smooth;
+}
+::selection {
+    color: #3e188c;
+    background: #efeaf8;
+  }

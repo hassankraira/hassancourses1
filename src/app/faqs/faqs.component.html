@@ -1,0 +1,29 @@
+<div class="ff">
+    <div class="second">
+      <div 
+        class="hh3" 
+        (click)="shows(f.id)" 
+        *ngFor="let f of faqs; let i = index" 
+        [ngStyle]="{'animation-delay': (i * 0.2) + 's'}">
+        
+        <div class="head">
+          <h3 style="width: 100%;font-size: 1.1rem; display: flex; align-items: center;">{{ f.question }}</h3>
+          <div class="pphh">
+            <svg class="arrow" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="40" width="40" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 112v288m144-144H112"></path></svg>
+          </div>
+        </div>
+    
+        <div *ngIf="f.show">
+          <p>{{ f.answer }}</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="first"><p class="hh">FAQS<span style="color: #a587e3;">.</span></p>
+        <p class="hh2">Common questions we often recieve—maybe the ones you have in mind. Hopefully, you'll find your answers here. If not, no worries! Head to section below and drop us a message, don't be shy!
+
+        </p>
+    </div>
+    </div>
+    

@@ -1,0 +1,162 @@
+.hh{
+    font-weight: 800;
+    font-family: 'n27', sans-serif;
+    color: #000000;
+    font-weight: 800;
+    font-size: 89px;
+    line-height: 1.175;
+    margin: 0;
+    padding-block: 3vh;
+    width: 85%;
+    text-align: right;
+}
+
+.ff{
+        display: flex;
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'n27',sans-serif;
+    justify-content: center;
+    gap: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 10%;
+}
+
+.hh2{
+    font-weight: 800;
+    font-family: 'n27', sans-serif;
+    color: #000000c5;
+    font-weight: 800;
+    font-size: max(-3.875em, min(1.25em, 5.333333vw));
+    line-height: 2;
+    width: 85%;
+    text-align: right;
+    opacity: 0.75;
+}
+.first{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+.second {
+    color: rgba(17, 13, 13, 0.758);
+    width: 60%;
+    display: grid;
+    gap: 10px;
+}
+
+.visible {
+    position: relative; 
+    opacity: 0;
+    animation: slideIn 1s ease forwards;
+    transform: translateX(-100%); 
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hh3{
+   
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-block: 5px;
+    padding-inline: 22px;
+    border: 3.2px solid;
+    border-image: linear-gradient(to bottom right, #a2d5f2, #7bdcb5, #6fc3df) 1;
+    border-radius: 4px;
+    transition: .5s ease-in-out;
+    text-align: left;
+    opacity: 0;
+    cursor: pointer;
+    box-shadow: 0 0 12px #3e188c;
+}
+.hh3:hover{
+    padding-left: 5.5%;
+    padding-right: 5.5%;
+}
+.head{
+    display: flex;
+    
+    gap: 40%;
+}
+.pp{
+    padding-block: 8px;
+    padding-inline: 16px;
+    border: 1.6px solid #a587e3;
+    border-radius: 50px;
+    transition: .5s ease-in-out;
+}
+.arrow{
+    transform:  rotate(90deg);
+    transition: .5s ease-in-out; 
+}
+.hh3:hover .arrow{
+    transform:  rotate(-90deg);
+    transition: .5s ease-in-out;
+
+
+}
+.pphh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    text-align: center;
+    gap: 3%;
+}
+@media (max-width: 768px) {
+    .ff{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .second{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+        margin-right: 10%;
+        align-items: center;
+    }
+    .head h3{
+        width: 80%;
+        font-size: 15px;
+    }
+    
+    .hh{
+        text-align: center;
+    }
+    .hh2{
+        text-align: center;
+    }
+    .hh3{
+        width: 100%;
+    }
+    .head{
+        width: 100%;
+        gap: 20%;
+    }
+    .first{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+    .second{
+        order: 2;
+    }
+}

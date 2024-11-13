@@ -1,0 +1,109 @@
+.head{
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-family: 'n27',sans-serif;
+    margin-left: 5%;
+    width: 95%;
+    margin-right: 5%;
+    gap: 5%;
+}
+.fimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 28.666667%;
+    height: auto;
+    background: linear-gradient(to left, transparent 50%, #87e393 50%) right;
+    background-size: 200%;
+    transition: .42s ease-in-out;
+    border: 3.6px solid;
+    border-image: linear-gradient(to bottom right, #a2d5f2, #7bdcb5, #6fc3df) 1;
+    border-radius: 4px;
+    box-shadow: 0 0 21px #188c25;
+    position: relative; /* To enable absolute positioning of child elements */
+    overflow: hidden; /* To prevent content from spilling out */
+    opacity: 0;
+}
+.visible{
+    animation: up 1.2s ease;
+    opacity: 1;
+
+}
+@keyframes up
+ {
+ 0%{
+    opacity: 0;
+    transform: translateY(100%);
+ }
+100%{
+    opacity: 1;
+    transform: translateY(0%);
+}
+    
+}
+
+.fimg img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.fimg h1{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 25px;
+    font-weight: 1000;
+    opacity: 0;
+    z-index: 1;
+}
+
+.fimg:hover{
+    background-position: left;
+    box-shadow: 0 0 36px #1c8c18; 
+
+}
+.fimg:hover h1{
+opacity: 1;}
+.first{
+    width: 26.66666667%;
+    font-size: 70px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    flex-direction: column;
+}
+.first p{
+    font-size: 20px;
+    font-weight: 100;
+
+}
+.first h4{
+    margin-bottom: 0;
+    font-size: 65px;
+    margin-right: 20%;
+}
+@media (max-width: 768px) {
+    .head{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .fimg{
+        width: 90%;
+    }
+    .first{
+        width: 100%;
+    }
+    h4{
+        font-size: 50px;
+    }
+    .fimg h1{
+        font-size: 20px;
+    }
+}
